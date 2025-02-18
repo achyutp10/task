@@ -24,10 +24,3 @@ The system exposes a **REST API** and also includes a **simple frontend** with H
 - **Environment Management**: Virtualenv / Pipenv  
 
 ---
-
-## 🛠 Installation & Setup
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/your-repo/student-entry-system.git
-cd student-entry-system
