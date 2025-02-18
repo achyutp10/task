@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+import sys
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -141,3 +143,7 @@ REST_FRAMEWORK = {
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'students/static')]
 TEMPLATES[0]['DIRS'] = [os.path.join(BASE_DIR, 'students/templates')]
+
+
+if len(sys.argv) > 1 and sys.argv[1] == "runserver" and len(sys.argv) == 2:
+    sys.argv.append("8025") 
